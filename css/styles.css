@@ -4,3 +4,39 @@ body {
   place-content: center;
   min-height: 100vh;
 }
+
+.flex {
+  display: flex;
+  gap: 0.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+form label:not(.radio-label, .checkbox-label) {
+  display: inline-block;
+  text-align: end;
+  min-width: 4.5rem;
+}
+
+.name-group input,
+.address-group input {
+  flex-grow: 2;
+}
+
+form button {
+  align-self: center;
+  border-radius: 0;
+  background-color: #add8e6;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
